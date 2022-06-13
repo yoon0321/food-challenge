@@ -1,0 +1,9 @@
+npx sequelize-cli model:generate --name User --attributes email:string,password:string,nickname:string
+npx sequelize-cli model:generate --name Store --attributes name:string,address:string,user_id:integer,description:string
+npx sequelize-cli model:generate --name Map --attributes name:string,user_id:integer,description:string
+npx sequelize-cli model:generate --name Map_store --attributes map_id:integer,store_id:integer
+npx sequelize-cli model:generate --name Like --attributes user_id:integer,map_id:integer
+npx sequelize-cli model:generate --name Store_category --attributes store_id:integer,category_id:integer
+npx sequelize-cli model:generate --name Category --attributes name:string
+npx sequelize-cli model:generate --name Image --attributes path:string,store_id:integer
+npx sequelize-cli model:generate --name Review --attributes review:string,store_id:integer,user_id:integer
